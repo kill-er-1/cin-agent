@@ -1,4 +1,3 @@
-"""SimpleAgent实现"""
 import re
 from typing import Optional, Dict, Any, Iterator
 from hello_agents import SimpleAgent, HelloAgentsLLM, Message, Config, ToolRegistry

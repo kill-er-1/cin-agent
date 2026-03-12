@@ -1,6 +1,16 @@
+from pathlib import Path
+
 from dotenv import load_dotenv
-from my_llm import MyLLM
+import sys
+
+# 把项目根目录加入模块搜索路径
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from dotenv import load_dotenv
+from core.llm import MyLLM
+
 load_dotenv()
+
 
 llm_deepseek = MyLLM(provider="deepseek")
 llm_kimi = MyLLM(provider="kimi")
